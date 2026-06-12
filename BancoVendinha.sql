@@ -1,7 +1,5 @@
 -- Database: Vendinha
 
--- DROP DATABASE IF EXISTS "Vendinha";
-
 CREATE DATABASE "Vendinha"
     WITH
     OWNER = postgres
@@ -15,7 +13,7 @@ CREATE DATABASE "Vendinha"
 
 
 
-	CREATE TABLE clientes (
+CREATE TABLE clientes (
     id SERIAL PRIMARY KEY,
     nome_completo VARCHAR(200) NOT NULL,
     cpf VARCHAR(14) NOT NULL,
